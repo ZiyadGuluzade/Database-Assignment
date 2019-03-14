@@ -1,0 +1,23 @@
+{
+  "name": "database-assignment",
+  "version": "1.0.0",
+  "description": "assignment",
+  "main": "Bamazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiyadGuluzade/Database-Assignment.git"
+  },
+  "author": "Ziyad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZiyadGuluzade/Database-Assignment/issues"
+  },
+  "homepage": "https://github.com/ZiyadGuluzade/Database-Assignment#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "mysql": "^2.16.0"
+  }
+}
