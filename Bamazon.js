@@ -31,14 +31,14 @@ var promptCustomer = function(res) {
     inquirer.prompt([{
         type: 'input',
         name: 'choice',
-        message: 'Purchase an item. [Exit with E]'
+        message: 'What would you like to purchase? [Exit with E]'
     }]).then(function(answer) {
         var correct=false;
         if(answer.choice.toUpperCase()==="E"){
             process.exit();
         }
         for(var i=0; i<res.length; i++) {
-            // if name of product in the stock matches the user's input setting th correct variable to true
+            // if name of product in the stock matche`s the user's input setting th correct variable to true
             if(res[i].productname==answer.choice){
                 correct = true;
                 var product=answer.choice;
@@ -60,7 +60,8 @@ var promptCustomer = function(res) {
                     if((res[id].stockquantity-answer.quantity)>0){
                         // displaying the number of the items left in stock
                         connection.query("Product quantity in stock is'"+res[id].stockquantity-
-                        answer.quant)+"' productname='"+product+"'", function(err, res2){
+                        answer.quant)+"' productname='"+product+
+                        "'", function(err, res2){
                             console.log("Product Purchased!");
                             createTable();
                         }
